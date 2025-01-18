@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.image-outline{
+  outline-offset: 20px;
+  transition: all .2s;
+}
+.image-outline:hover{
+  outline: 15px solid #0000FF;
+}
+
+.bg-gradient{
+	background-image: linear-gradient(220deg, #2a7ea3 0%, #476a80 100%);
+}
+
+.read-more-line span:after {
+  position: absolute;
+  content: "";
+  left: -65px;
+  top: 50%;
+  width: 50px;
+  border-bottom: 2px solid #27304b;
+  transform: translateY(-50%);
+}
+.img.green {
+  box-shadow: 0px 0px 0px 20px rgba(0, 166, 118, 0.1);
+}
+
+.img.navy-blue {
+  box-shadow: 0px 0px 0px 20px rgba(37, 45, 70, 0.1);
+}
+
+.img.orange {
+  box-shadow: 0px 0px 0px 20px rgba(255, 99, 85, 0.1);
+}
+
+.img.beige {
+  box-shadow: 0px 0px 0px 20px rgba(250, 240, 231, 0.7);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Colors */
+.bg-gold {
+  background-color: #fbbf24; /* Tailwind gold */
+}
+
+
