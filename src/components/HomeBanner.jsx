@@ -31,7 +31,7 @@ const HomeBanner  = () => {
         {slideData.map((data, slideIndex) => (
           <div
             key={slideIndex}
-            className={`absolute w-full h-full inset-0 transition-opacity duration-1000 ease-in-out ${
+            className={`absolute top-0 left-0 w-full h-full inset-0 transition-opacity duration-1000 ease-in-out ${
               index === slideIndex ? 'opacity-100 visible' : 'opacity-0 invisible'
             }`}
             style={{
@@ -45,18 +45,18 @@ const HomeBanner  = () => {
               <div className="max-w-7xl mx-auto px-6 lg:px-12">
                 {/* Text Content */}
                 <div className="max-w-2xl">
-                  <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6 animate-fadeIn">
+                  <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-4 animate-fadeIn">
                     {data.title}
                   </h1>
 
                   <h2
-                    className="text-2xl lg:text-3xl font-medium italic mb-6 animate-fadeIn text-gray-300"
+                    className="text-2xl lg:text-3xl font-medium italic mb-4 animate-fadeIn text-gray-300"
                     style={{ animationDelay: '200ms' }}
                   >
                     {data.sub_title}
                   </h2>
                   <p
-                    className="text-lg lg:text-xl mb-8 animate-fadeIn"
+                    className="lg:text-xl mb-8 animate-fadeIn"
                     style={{ animationDelay: '200ms' }}
                   >
                     {data.desc}
@@ -73,7 +73,7 @@ const HomeBanner  = () => {
       </div>
 
       {/* Indicators */}
-      <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 flex gap-2">
+      <div className="absolute bottom-5  lg:bottom-12 left-1/2 transform -translate-x-1/2 lg:flex gap-2">
         {slideData.map((_, slideIndex) => (
           <button
             key={slideIndex}

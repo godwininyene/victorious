@@ -54,7 +54,7 @@ const Home = ()=>{
 
             {/* Transactions start */}
            <div
-                className="bg-white dark:bg-slate-950 max-w-6xl mx-auto relative top-[-30px] z-10 rounded dark:text-black"
+                className="bg-white overflow-hidden dark:bg-slate-950 max-w-6xl mx-auto relative top-[-30px] z-10 rounded dark:text-black"
                 data-aos="fade-up"
             >
                 <div className="block md:flex justify-center px-5 py-6 gap-x-5">
@@ -203,7 +203,7 @@ const Home = ()=>{
             {/* Brief End */}
 
             {/* Section Cause Start */}
-            <section id='causes' className='py-[50px] lg:py-[100px] px-7 lg:px-0'>
+            <section id='causes' className='py-[50px] lg:py-[100px] px-7 lg:px-0 overflow-hidden'>
                 <div className="max-w-6xl mx-auto">
 
                     <div className='mb-7' data-aos="fade-up">
@@ -666,7 +666,7 @@ const Home = ()=>{
                                     <form onSubmit={handleSubmit}>
                                         <div className='flex flex-col lg:flex-row lg:gap-x-4 mb-4'>
                                             <div className='w-full lg:w-2/4'>
-                                                <input type="text" required name='name' placeholder='Enter Your Name'  className='w-full rounded px-[25px] py-[15px] border transition-all duration-300 focus-within:outline-0 focus:border-primary'/>
+                                                <input type="text" required name='name' placeholder='Enter Your Name'  className='w-full mb-4 lg:mb-0 rounded px-[25px] py-[15px] border transition-all duration-300 focus-within:outline-0 focus:border-primary'/>
 
                                             </div>
 
@@ -678,7 +678,7 @@ const Home = ()=>{
 
                                         <div className='flex flex-col lg:flex-row lg:gap-x-4 mb-4'>
                                             <div className='w-full lg:w-2/4'>
-                                                <input type="text" required name='phone' placeholder='Enter Your Phone No.'  className='w-full rounded px-[25px] py-[15px] border transition-all duration-300 focus-within:outline-0 focus:border-primary'/>
+                                                <input type="text" required name='phone' placeholder='Enter Your Phone No.'  className='w-full rounded mb-4 lg:mb-0 px-[25px] py-[15px] border transition-all duration-300 focus-within:outline-0 focus:border-primary'/>
 
                                             </div>
 

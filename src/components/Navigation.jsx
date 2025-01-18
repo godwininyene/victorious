@@ -63,7 +63,7 @@ const Navigation = () => {
                     <aside className="flex items-center justify-between w-full lg:w-auto">
                         <div className="flex items-center flex-grow">
                             <img src={logo} alt="" className="w-20" />
-                            <h1 className='font-semibold text-primary-dark'>Victorious Non-Profit Charity</h1>
+                            <h1 className='font-semibold text-primary-dark text-sm'>Victorious Non-Profit Charity</h1>
                         </div>
                         <button  className="bg-white text-slate-950 p-1 px-2 rounded-md flex items-center justify-center lg:hidden relative z-50" onClick={() => setToggle((prev) => !prev)}>
                             {
